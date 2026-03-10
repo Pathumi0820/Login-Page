@@ -1,0 +1,123 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0ede6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  width: 320px;
+  background-color: #f5f2eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Header ── */
+.card-header {
+  background: linear-gradient(to right, #3a00d5, #cc0055);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-header h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ── Body ── */
+.card-body {
+  padding: 24px 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ── Inputs ── */
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.9rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+.input-group input:focus {
+  border-color: #3a00d5;
+}
+
+/* ── Options row ── */
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  accent-color: #3a00d5;
+}
+
+.forgot-link {
+  color: #3a00d5;
+  text-decoration: underline;
+  font-size: 0.82rem;
+}
+
+.forgot-link:hover {
+  color: #cc0055;
+}
+
+/* ── Login button ── */
+.login-btn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(to right, #3a00d5, #cc0055);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.login-btn:hover {
+  opacity: 0.92;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
